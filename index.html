@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lbox">
+        <div class="dt">
+          <div id="date"></div>
+          <div id="time"></div>
+        </div>
+        <div class="details">
+          <div
+            id="desc"
+            style="text-align: center; margin-bottom: 20px; font-size: 1.9rem"
+          ></div>
+          <div id="td"></div>
+        </div>
+      </div>
+      <div class="rbox">
+        <div class="box1">
+          <input type="text" placeholder="search" id="search" />
+          <button id="getweather" class="btn">Submit</button>
+          <div id="symbol" style="display: none; gap: 8px; font-size: 1.3rem">
+            <div>
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div id="loc"></div>
+            <div id="deg"></div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <div class="txt">The Next Days Forecast</div>
+          <div>
+            <button id="getweather1" class="btn">5 days</button>
+            <div id="container" class="txtstyle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="bi bi-wind" ></div>
+    <i class="bi bi-cloud"></i>
+    <i class="bi bi-brightness-high"></i>
+    <i class="bi bi-cloud-rain"></i>
+    <i class="bi bi-snow"></i>
+    <i class="bi bi-cloud-lightning"></i> -->
+    <script src="script.js"></script>
+  </body>
+</html>
